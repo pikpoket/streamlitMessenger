@@ -17,6 +17,8 @@ def main(name):
     st.title("Messenger analysis :sunglasses: \t")
     st.caption("To obtain messenger data, follow the instructions on this link https://www.facebook.com/help/212802592074644")
     st.caption("Then upload one of you conversation (found in messages/inbox/*<conversation_name>*/message_1.json)")
+    st.caption("None of your data is stored on Streamlit server https://discuss.streamlit.io/t/how-long-are-are-the-files-uploaded-via-file-uploader-stored-on-streamlits-server/12897")
+    st.caption("You can found the source code for this project on my github: https://github.com/pikpoket/streamlitMessenger/blob/master/main.py")
 
     with st.spinner('Wait for it...'):
         json_conv = st.file_uploader('Upload messenger file', type="json")  # 👈 this is a widget
@@ -143,7 +145,6 @@ def main(name):
             st.plotly_chart(msgCarac)
 
             st.balloons()
-
 
 
 # Press the green button in the gutter to run the script.
