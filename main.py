@@ -5,12 +5,8 @@
 
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
 import plotly.express as px
 import json
-from sklearn.cluster import KMeans
-from tslearn.clustering import TimeSeriesKMeans
-
 import streamlit as st
 
 
